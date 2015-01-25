@@ -3,16 +3,17 @@ author,address,character,500,1
 author,URL,character,100,3
 publisher,name,character,40,1
 publisher,address,character,500,2
-publisher,phone,integer,12,3
-publisher,URL,character,100,4
-customer,name,character,40,1
-customer,address,character,500,2
-customer,email, character,50,3
+publisher,phone,integer,12,4
+publisher,URL,character,100,3
+customer,name,character,40,2
+customer,address,character,500,3
+customer,email, character,50,1
 customer,phone,integer,12,4
-shopping_basket,basketID,long,15,5
-warehouse,address,character,500,1
-warehouse,phone,integer,12,2
-book,ISBN,character,20,4
-book,title,character,50,2
-book,year,integer,5,3
-book,price,long,10,1
+shopping_basket,basketID,long,15,1
+warehouse,code,character,50,1
+warehouse,address,character,500,2
+warehouse,phone,integer,12,3
+book,ISBN,character,20,1
+book,title,character,50,3
+book,year,integer,5,2
+book,price,long,10,4

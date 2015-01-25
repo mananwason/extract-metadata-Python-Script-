@@ -4,6 +4,7 @@ rows = []
 abc = []
 countA = []
 countB = {}
+result = []
 with open('q6a1metadata.txt') as fp:	
 	for line in fp:
 		items=[x.strip() for x in line.split(',')]
@@ -17,26 +18,25 @@ fourth_elements = [x[3] for x in rows]
 fifth_elements = [x[4] for x in rows]
 
 countA = Counter(elem[0] for elem in rows)
-print countA
-print dict((k, dict(v)) for k, v in countA.iteritems())
-#print countB
-c =0
-for key in countA:
-	print key
-	i = countA[key]
-	for x in range(0,i):
-		#print(key + "(" +second_elements[c] )
-		c += 1
-		
+countB = sorted(countA.items(), key=itemgetter(0))
+y=c=j=z=m=n=0
+fin = [int(i[1]) for i in countB]
+name = [(x[0]) for x in countB]
+total = sum(fin)
+print ""
+print ("REQUIRED RELATIONS : ")
+print ""
+for key in countB:
 	
-"""
-print (first_elements + "("+ )
-print("########################")
-print second_elements"""
-""""
-print("########################")
-print third_elements
-print("########################")
-print fourth_elements
-print("########################")
-print fifth_elements"""
+	i = fin[j]	
+	n+= fin[j]	
+	result = [a + " " + b for a, b in zip(third_elements, second_elements)]
+	print(name[z]),
+	print( "(" ),
+	print ', '.join(result[m:n]),
+	print(")")
+	print ""
+	m=n
+	j+=1
+	z+=1
+c += 1
